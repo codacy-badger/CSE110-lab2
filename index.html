@@ -73,19 +73,41 @@
   </div>
     <img src="IMG_5628.JPG" width="400" height="400" alt="This is me">
 
+
     <hr>
       <h2>Contact form</h2>
       <form>
         Name:<br>
-        <input type="text"><br>
+        <input type="text" id="fname" name="fname"><br>
         Email:<br>
-        <input type="text">
+        <input type="email">
         <br>
+        Telephone Number:<br>
+        <input type="tel">
+        <br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" name="favcolor" value="#222222">
+        <br>
+        <label for="quantity">What is your favorite number</label>
+        <input type="number" name="quantity" min="1" max="100000">
+        <br>
+        <label for="bdaymonth">Birthday month):</label>
+        <input type="month" name="bdaymonth">
+        <br>
+        <label for="birthday">Birthday date:</label>
+        <input type="date" name="birthday">
+        <br>
+          <label for="myfile">which file you want to use:</label>
+          <input type="file" name="files">
+        <br>
+
         <button class="aDot">SUBMIT</button>
         <input type="submit" value="what is it">
+        <input type="reset">
         <br>
 
       </form>
+    
   </body>
 </html>
 
