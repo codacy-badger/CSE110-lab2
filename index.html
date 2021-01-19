@@ -9,21 +9,42 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
+  <main role="main">
+    <p>This is nothing to do with the website</p>
+  </main>
+  
+  <nav class="navis">
+    <ol>
+        <li class="nav"><a href="#">Undergrads</a></li>
+        <li class="nav">Stella</li>
+    </ol>
+</nav>
+  
   <body>
+    <aside>
+    <p>It is so hard to satisfy the <b>requirement</b></p>
+  </aside>
+    
+    <section>
     <table>
+       <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Title</th>
+       </tr>
       <tr><td><img src="transnationaleyecopy.PNG" width="50" height="30" class="eye" alt="an drawing by me"></td>
           <td><h1 title="Don't click me">Welcome to my website</h1></td>
       </tr>
       
     </table>
+    </section>
     
-   <!-- <table cellpadding="10" cellspacing = "1">
-      <tr>
-        <td><a href="https://google.com"><button>middle school </button></a></td>
-        <td><button>high school </button></td>
-        <td><button>college </button></td>
-      </tr>
-    </table> -->
+    <figure>
+    <img src="transnationaleyecopy.PNG"
+         alt="Eye">
+    <figcaption>An eye drawn by me</figcaption>
+    </figure>
+    
+    
    
     <div class="tables1">
       <hr>
@@ -38,33 +59,11 @@
     <hr>
     </div>
 
- <!--   <div class="container">
-      <table>
-        <tr>
-          <td>Janurary</td>
-          <td>Feburary</td>
-          <td>March</td>
-          <td>April</td>
-        </tr>
-        <tr>
-          <td>May</td>
-          <td>June</td>x
-          <td>July</td>
-          <td>August</td>
-        </tr>
-        <tr>
-          <td>September</td>
-          <td>October</td>
-          <td>November</td>
-          <td>December</td>
-        </tr>
-      </table>
-    </div>  -->
   <div class="p1">
 
     <br>
       <h3>Hello, this is Stella. I am a rising sophomore at UCSD. I am currently working on the html project.
-      Below is my email <em>jim009@ucsd.edu</em>. Feel Freee to shot me an email.</h3>
+      Below is my email <span class="email"><em>jim009@ucsd.edu</em></span>. Feel Freee to shot me an email.</h3>
       <br>
       click on <a href="www.linkedin.com/in/jiuge-stella-ma">this link</a> 
         for more information. =
@@ -73,7 +72,86 @@
   </div>
     <img src="IMG_5628.JPG" width="400" height="400" alt="This is me">
 
+    
+    <figure>
+    <figcaption>Listen:</figcaption>
+    <audio
+        controls
+        src="t-rex-roar.mp3">
+            Chen your browser for
+            <code>audio</code>.
+    </audio>
+    </figure>
+    
+    <iframe id="map"
+    width="100"
+    height="200"
+    src="www.google.com">
+    </iframe>
+    
+    <svg width="400" height="110">
+    <rect width="100" height="20" 
+    </svg>
+      
+    
+    
+    <video controls width="250">
 
+    <source src="https://www.youtube.com/watch?v=mIYzp5rcTvU">
+    </video>
+      
+      
+      
+    <label for="WeekDay-choice">Choose your favorite weekday:</label>
+    <input list="Days" name="Day-choice" />
+
+    <datalist id="Days">
+      <option value="Monday">
+      <option value="Tuesday">
+      <option value="Wednesday">
+      <option value="Thursday">
+      <option value="Friday">
+    </datalist>
+      
+    <fieldset>
+    <legend>Choose your favorite weekday again</legend>
+
+    <input type="radio" id="Monday" name="days">
+    <label for="Monday">Monday</label><br/>
+
+    <input type="radio" id="Tuesday" name="days">
+    <label for="Tuesday">Tuesday</label><br/>
+
+    <input type="radio" id="Wednesday" name="days">
+    <label for="Wednesday">Mothman</label>
+      
+    <input type="radio" id="Thursday" name="days">
+    <label for="Thursday">Mothman</label>
+      
+    <input type="radio" id="Friday" name="days">
+    <label for="Friday">Mothman</label>
+      
+    </fieldset>
+      
+   <label for="day-select">Choose a day:</label>
+  <select name="day" id="day">
+    <option value="">--Please choose an option--</option>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+  </select>
+
+  <label for="curious">Curious about what is this?:</label>
+
+<textarea id="curiouss" name="curiousss"
+          rows="5" cols="33">
+
+          Don't tell you hahahah.
+</textarea>  
+      
+    
     <hr>
       <h2>Contact form</h2>
       <form>
@@ -108,7 +186,27 @@
         <br>
 
       </form>
-    
+      
+      <template id="his">
+        <tr>
+           <td class="what"></td>
+          <td></td>
+        </tr>
+      </template>
+      
+      <details>
+    <summary>Thank you for checking</summary>
+    Have a good day
+  </details>
+  
+  <canvas id="Yours" width="100" height="100" >
+ No support for the HTML canvas tag.
+  </canvas>
+      
+      
   </body>
+      <footer>
+        <p>© 2021 Stella Ma</p>
+    </footer>
 </html>
 
